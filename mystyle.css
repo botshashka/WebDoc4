@@ -39,7 +39,7 @@ label {
 /* Navigation */
 
 .topnav {
-	max-width: inherit;
+	max-width: 100%;
 	justify-content: center;
 	vertical-align: middle;
 	padding: 25px 60px;
@@ -108,7 +108,7 @@ label {
 
 .intro {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: inherit;
 	height: 50vw;
 	background-color: #D78E8A;
@@ -195,6 +195,8 @@ label {
 	display: flex;
 	justify-content: center;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding: 20vw 10vw;
 }
 
