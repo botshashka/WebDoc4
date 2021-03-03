@@ -34,6 +34,7 @@ p {
 
 label {
 	color: white;
+	font-size: 18px;
 }
 
 /* Navigation */
@@ -74,16 +75,34 @@ label {
 	font-size: 18px;
 	letter-spacing: 0.5px;
 	display: flex;
-
 }
 
 .topnav a:hover {
-	color: lightgray;
+	opacity: 70%;
 }
 
 
 .topnav a.active {
 	text-decoration: underline;
+}
+
+.nav-button {
+	margin-left: 10px;
+	background-color:#D78E8A;
+	border: 3px solid white;
+	color: white;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 8px 35px;
+	border-radius: 8px;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+}
+
+.nav-button:hover {
+	background-color: white;
+	color: #D78E8A;
 }
 
 /* Intro */
@@ -96,7 +115,13 @@ label {
 	background-color: #D78E8A;
 }
 
-.intro-img {}
+.intro-img {
+	max-width: inherit;
+	max-height: inherit;
+	width: auto;
+	height: auto;
+	display: block;
+}
 
 .intro-right {
 	display: flex;
@@ -115,7 +140,21 @@ label {
 }
 
 .cta-button {
-	width: 200px;
+	max-width: max-content;
+	background-color:#D78E8A;
+	border: 3px solid white;
+	color: white;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 20px;
+	padding: 8px 35px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.cta-button:hover {
+	background-color: white;
+	color: #D78E8A;
 }
 
 /* Start */
@@ -144,7 +183,11 @@ label {
 }
 
 .start img {
-	width: 600px;
+	max-width: 800px;
+	max-height: 800px;
+	width: auto;
+	height: auto;
+	display: block;
 }
 
 /* Picture section */
@@ -218,7 +261,6 @@ label {
 .contact-left {
 	display: flex;
 	justify-items: flex-start;
-	flex-direction: column;
 	margin-right: 10vw;
 	width: 700px;
 }
@@ -235,8 +277,11 @@ label {
 }
 
 .contact a {
-	font-size: 40px;
 	color: white;
+}
+
+.contact a {
+	font-size: 40px;
 	font-weight: 500;
 }
 
@@ -245,38 +290,38 @@ label {
 }
 
 /* Contact form */
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-	width: 100%; /* Full width */
-	padding: 15px; /* Some padding */ 
-	border-radius: 6px; /* Rounded borders */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 6px; /* Add a top margin */
-	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-	background-color: #4CAF50;
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 15px;
+	border-radius: 6px;
+	box-sizing: border-box;
+	margin-top: 4px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-size: 14px;
+	font-family: inherit;
+}
+
+input[type=submit] {
+	background-color:#D78E8A;
+	border: 3px solid white;
 	color: white;
-	padding: 14px 40px;
-	border: none;
-	border-radius: 4px;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 18px;
+	padding: 10px 40px;
+	border-radius: 7px;
 	cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-	background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-  }
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color:#D78E8A
+}
 
 /* Media queries */
 
@@ -341,5 +386,24 @@ input[type=text], select, textarea {
 	.section-title {
 		font-size: 32px;
 		padding: 20px 40px;
+	}
+
+	.contact-content{
+		flex-direction: column;
+	}
+
+	.contact-left {
+		width: inherit;
+		margin-right: 0;
+	}
+
+	.contact-right {
+		margin-top: 40px;
+		width: inherit;
+		text-align: left;
+	}
+
+	.contact a {
+		font-size: 30px;
 	}
 }
