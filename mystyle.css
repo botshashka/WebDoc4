@@ -1,0 +1,194 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+.page_body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	max-width: 1680px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.topnav {
+	width: 100%;
+	justify-content: center;
+	vertical-align: middle;
+	padding: 25px 60px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+}
+
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+
+.logo-nav {
+	color: #fff;
+	font-weight: 600;
+	margin-right: 24px;
+	font-size: 28px;
+	letter-spacing: 0.5px;
+}
+
+.menu-items {
+	display: flex;
+}
+
+.menu-items a {
+	text-decoration: none;
+	color: #fff;
+	margin-right: 24px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	display: flex;
+
+}
+
+.topnav a:hover {
+	color: lightgray;
+}
+
+
+.topnav a.active {
+	text-decoration: underline;
+}
+
+
+/* Intro */
+
+.intro {
+	display: flex;
+	justify-content: space-between;
+	width: inherit;
+	height: 50vw;
+	background-color: #D78E8A;
+}
+
+.intro-img {}
+
+.intro-right {
+	display: flex;
+	width: 1200px;
+	justify-content: center;
+	flex-direction: column;
+	padding: 8vw;
+}
+
+.intro-right h1 {
+	max-width: 80%;
+	font-size: 60px;
+	color: #FFF;
+	letter-spacing: 1px;
+	margin: 30px 0px 20px;
+}
+
+.cta-button {
+	width: 200px;
+}
+
+/* Start */
+
+.start {
+	padding: 5vw 8vw;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+}
+
+.start-left {
+	justify-content: center;
+	padding-right: 60px;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+}
+
+.start h2 {
+	font-size: 40px;
+	margin-bottom: 14px;
+}
+
+.start p {
+	font-size: 20px;
+	line-height: 34px;
+	color: grey;
+}
+
+.start img {
+	width: 600px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1328px) {
+
+	.intro-right h1 {
+		max-width: 80%;
+		font-size: 4vw;
+		margin: 30px 0px 20px;
+	}
+
+	.cta-button {
+		width: 15vw;
+	}
+
+	.start h2 {
+		font-size: 30px;
+	}
+
+	.start p {
+		font-size: 18px;
+		line-height: normal+2;
+	}
+
+	.start {
+		flex-direction: column;
+	}
+
+	.start img {
+		margin-top: 50px;
+		align-self: flex-end;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.start p {
+		font-size: 16px;
+		line-height: normal+1;
+	}
+	
+	.start-left {
+		display: flex;
+		flex-direction: column;
+		width: inherit;
+		padding-right: 0;
+	}
+
+	.start {
+		padding: 10vw 6vw;
+	}
+
+	.start img {
+		align-self: auto;
+		width: inherit;
+		margin-right: 0;
+	}
+}
