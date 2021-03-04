@@ -90,7 +90,7 @@ label {
 
 .nav-button {
 	margin-left: 10px;
-	background-color:#D78E8A;
+	background-color: #D78E8A;
 	border: 3px solid #fff;
 	color: #fff;
 	font-family: inherit;
@@ -143,7 +143,7 @@ label {
 
 .cta-button {
 	max-width: max-content;
-	background-color:#D78E8A;
+	background-color: #D78E8A;
 	border: 3px solid #fff;
 	color: #fff;
 	font-family: inherit;
@@ -242,7 +242,7 @@ label {
 
 .video-section {
 	background-color: #fff;
-	height: 55vw;
+	padding: 5vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -312,7 +312,7 @@ textarea {
 }
 
 input[type=submit] {
-	background-color:#D78E8A;
+	background-color: #D78E8A;
 	border: 3px solid #fff;
 	color: #fff;
 	font-family: inherit;
@@ -325,7 +325,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: #fff;
-	color:#D78E8A
+	color: #D78E8A
 }
 
 /* Media queries */
@@ -361,6 +361,13 @@ input[type=submit]:hover {
 	}
 }
 
+@media screen and (max-width: 1128px) {
+	.myVideo {
+		max-width: 480px;
+		max-height: 270px;
+	}
+}
+
 @media screen and (max-width: 860px) {
 	p {
 		font-size: 16px;
@@ -393,7 +400,7 @@ input[type=submit]:hover {
 		padding: 20px 40px;
 	}
 
-	.contact-content{
+	.contact-content {
 		flex-direction: column;
 	}
 
@@ -411,4 +418,15 @@ input[type=submit]:hover {
 	.contact a {
 		font-size: 30px;
 	}
+
+	.text-section {
+		padding: 10vw 6vw;
+	}
+
+	.myVideo {
+		margin: 50px 0;
+		max-width: 100%;
+		max-height: 50vw;
+	}
+
 }
